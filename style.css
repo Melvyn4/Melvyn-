@@ -239,3 +239,83 @@ footer {
     transform: translateY(0);
   }
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* Fond blanc */
+  color: #000; /* Texte noir */
+}
+
+header {
+  text-align: center;
+  background-color: #000; /* Noir */
+  color: #FFD700; /* Doré */
+  padding: 20px 0;
+  border-bottom: 3px solid #FFD700;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #FFD700; /* Doré */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.intro-section {
+  text-align: center;
+  padding: 50px;
+  background-color: #fff; /* Blanc */
+  color: #000; /* Texte noir */
+  border-bottom: 2px solid #FFD700;
+}
+
+.about-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff; /* Fond blanc */
+  color: #000; /* Texte noir */
+  border: 2px solid #FFD700; /* Bordure dorée */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.project-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff; /* Fond blanc */
+  color: #000; /* Texte noir */
+  border: 2px solid #FFD700; /* Bordure dorée */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.contact-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff; /* Fond blanc */
+  color: #000; /* Texte noir */
+  border: 2px solid #FFD700; /* Bordure dorée */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Autres styles existants */
