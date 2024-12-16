@@ -8,6 +8,20 @@
 </head>
 <body>
   <script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  });
+
+  // Sélectionne les sections
+  const sections = document.querySelectorAll('.section');
+  sections.forEach((section) => observer.observe(section));
+</script>
+
+  <script>
   // Observer pour détecter quand un élément devient visible
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -99,4 +113,26 @@ Mais ma vision ne s’arrête pas là. À terme, je souhaite créer ma propre é
   <h2 class="section-title">À propos de moi</h2>
   <p>Je m'appelle Melvyn Duarte Silva, j'ai 22 ans...</p>
   <img src="IMG_0624.jpg" alt="Photo de Melvyn">
+</section>
+<section id="about" class="section">
+  <h2>À propos de moi</h2>
+  <p>Je m'appelle Melvyn Duarte Silva...</p>
+</section>
+
+<section id="project" class="section">
+  <h2>Mon Projet</h2>
+  <p>Depuis toujours, je rêve de devenir journaliste sportif...</p>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contactez-moi</h2>
+  <p>Email : melvyn.duarte.silva@example.com</p>
+  <p>Téléphone : +33 6 12 34 56 78</p>
+  <form>
+    <label for="email">Votre email :</label>
+    <input type="email" id="email" placeholder="Entrez votre email">
+    <label for="message">Votre message :</label>
+    <textarea id="message" placeholder="Entrez votre message"></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
 </section>
