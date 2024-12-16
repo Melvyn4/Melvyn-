@@ -7,6 +7,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script>
+  // Observer pour détecter quand un élément devient visible
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  });
+
+  // Sélectionne les éléments à animer
+  const elements = document.querySelectorAll('.animate');
+  elements.forEach((el) => observer.observe(el));
+</script>
 <header>
   <h1>
     Melvyn Duarte Silva
