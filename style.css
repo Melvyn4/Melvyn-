@@ -539,3 +539,27 @@ section {
   border-radius: 10px;
   margin: 20px 0;
 }
+/* Texte caché par défaut */
+.section p, .section h2 {
+  opacity: 0;
+  transform: translateY(20px); /* Descend légèrement */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Texte visible après déclenchement */
+.section.visible p, .section.visible h2 {
+  opacity: 1;
+  transform: translateY(0); /* Revient à sa position normale */
+}
+.section p, .section h2 {
+  opacity: 0;
+  transform: translateY(30px) scale(0.98);
+  filter: blur(3px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out, filter 0.5s ease-out;
+}
+
+.section.visible p, .section.visible h2 {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
