@@ -407,3 +407,23 @@ header h1 img {
   margin-left: 20px; /* Espace entre le texte et l'image */
   border-radius: 10px; /* Coins légèrement arrondis (optionnel) */
 }
+header p, nav {
+  text-align: center; /* Centre le sous-titre et le menu de navigation */
+}
+/* Centrer le titre avec l'image ronde */
+header {
+  text-align: center; /* Centre tout le contenu de l'en-tête */
+}
+
+header h1 {
+  display: inline-flex; /* Permet d'aligner le texte et l'image côte à côte tout en centrant */
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 img {
+  width: 50px; /* Taille de l'image ronde */
+  height: 50px;
+  border-radius: 50%; /* Rend l'image ronde */
+  margin-left: 10px; /* Espace entre le titre et l'image */
+}
