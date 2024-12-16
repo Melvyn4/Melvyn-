@@ -1,141 +1,114 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Melvyn Duarte Silva</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Page d'accueil -->
-  <div id="entry-screen">
-    <div class="entry-content">
-      <h1>Melvyn Duarte Silva</h1>
-      <p>Bienvenue sur mon site personnel, où vous découvrirez mon parcours et mes aspirations.</p>
-      <div class="entry-buttons">
-        <button onclick="navigateTo('#home')">Accueil</button>
-        <button onclick="navigateTo('#about')">À propos</button>
-        <button onclick="navigateTo('#project')">Mon Projet</button>
-        <button onclick="navigateTo('#contact')">Contact</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Contenu principal -->
-  <main>
-    <section id="home" class="intro-section">
-      <h2>Bienvenue</h2>
-      <p>Explorez mon univers, entre sport, passion et projets ambitieux.</p>
-    </section>
-
-    <section id="about" class="about-section">
-      <h2>À propos de moi</h2>
-      <div class="about-content">
-        <div class="text">
-          <p>Je m'appelle Melvyn Duarte Silva, j'ai 22 ans et je viens de Sartrouville. Après avoir obtenu mon baccalauréat en série STMG avec une spécialité en gestion et finance, j’ai décidé de poursuivre mes études dans le domaine du sport et de la gestion. Actuellement en troisième année de licence professionnelle CPSS (Commercialisation des Produits et Services Sportifs), je développe mes compétences à la croisée de mes passions pour le sport et les enjeux commerciaux.</p>
-          <p>En dehors de mon parcours académique, je suis profondément passionné par le sport, notamment par la NBA et la Formule 1, deux univers qui m'inspirent par leur intensité et leur compétitivité. Sur le plan personnel, je pratique également le basketball à un niveau élevé, ce qui m’a permis de cultiver des valeurs telles que le travail d'équipe, la rigueur et la persévérance.</p>
-          <p>Mon objectif est de combiner mes compétences académiques et ma passion sportive pour contribuer activement à l’industrie du sport, que ce soit dans la commercialisation, la gestion ou le développement de produits et services sportifs innovants.</p>
-        </div>
-        <div class="photo">
-          <img src="path/to/photo-melvyn.jpg" alt="Photo de Melvyn Duarte Silva">
-        </div>
-      </div>
-    </section>
-
-    <section id="project" class="project-section">
-      <h2>Mon Projet</h2>
-      <p>Depuis mon plus jeune âge, je rêve de devenir journaliste sportif professionnel, une vocation née de ma passion pour le sport et l’écriture. Mon objectif ultime est de travailler pour une grande enseigne médiatique reconnue pour son expertise et son rayonnement international.</p>
-      <p>Mais mon ambition ne s’arrête pas là : je souhaite, à terme, créer ma propre émission dédiée au monde du sport, en particulier à la NBA. Cette plateforme inclura podcasts, vidéos immersives et articles approfondis pour connecter et inspirer une communauté autour de la culture NBA.</p>
-      <div class="images">
-        <img src="path/to/photo-basket.jpg" alt="Photo de basket">
-        <img src="path/to/photo-studio.jpg" alt="Photo du studio">
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <h2>Contactez-moi</h2>
-      <p>Email : melvyn.duarte.silva@example.com</p>
-      <p>Téléphone : +33 6 12 34 56 78</p>
-      <p>Portfolio : <a href="https://melvyn4.github.io/Melvyn-/" target="_blank">melvyn4.github.io/Melvyn-</a></p>
-      <form>
-        <label for="email">Votre email :</label>
-        <input type="email" id="email" placeholder="Entrez votre email">
-        <label for="message">Votre message :</label>
-        <textarea id="message" placeholder="Entrez votre message"></textarea>
-        <button type="submit">Envoyer</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 Melvyn Duarte Silva</p>
-  </footer>
-
-  <script>
-    // Fonction pour naviguer vers une section
-    function navigateTo(sectionId) {
-      document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
-      document.getElementById('entry-screen').style.display = 'none';
-    }
-  </script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fond NBA</title>
+    <title>Melvyn Duarte Silva</title>
     <style>
         body {
             margin: 0;
-            padding: 0;
             font-family: Arial, sans-serif;
-            background: #000; /* Fond noir principal */
-            color: #fff; /* Texte blanc pour le contraste */
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
         }
-
-        .background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #000; /* Fond noir sans image */
-            z-index: -1; /* Place le fond derrière tout le contenu */
-        }
-
-        .content {
+        header {
             text-align: center;
-            padding: 50px;
-        }
-
-        h1 {
-            color: #FFD700; /* Or */
-        }
-
-        p {
-            color: #fff; /* Blanc */
-        }
-
-        a {
-            color: #FFD700;
-            text-decoration: none;
+            padding: 20px;
+            font-size: 2em;
             font-weight: bold;
+            color: #FFD700;
         }
-
-        a:hover {
-            text-decoration: underline;
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav button {
+            background: none;
+            border: 2px solid #FFD700;
+            color: #FFD700;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        nav button:hover {
+            background-color: #FFD700;
+            color: #000;
+        }
+        section {
+            display: none;
+            padding: 20px;
+        }
+        section.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .photo {
+            position: relative;
+            margin: 20px;
+            text-align: center;
+        }
+        .photo img {
+            max-width: 90%;
+            border: 3px solid #FFD700;
         }
     </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
 </head>
 <body>
-    <div class="background"></div>
-    <div class="content">
-        <h1>Bienvenue sur le site NBA</h1>
-        <p>Explorez le meilleur du basket-ball avec style.</p>
-        <a href="#">En savoir plus</a>
-    </div>
+    <header>
+        Melvyn Duarte Silva
+    </header>
+    <nav>
+        <button onclick="showSection('a-propos')">À propos de moi</button>
+        <button onclick="showSection('mon-projet')">Mon projet</button>
+        <button onclick="showSection('contact')">Mes contacts</button>
+    </nav>
+    
+    <section id="a-propos" class="active">
+        <div class="content">
+            <h2>À propos de moi</h2>
+            <p>Je m'appelle Melvyn Duarte Silva, j'ai 22 ans et je viens de Sartrouville. Après avoir obtenu mon baccalauréat en série STMG avec une spécialité en gestion et finance, j’ai décidé de poursuivre mes études dans le domaine du sport et de la gestion. Actuellement en troisième année de licence professionnelle CPSS (Commercialisation des Produits et Services Sportifs), je développe mes compétences à la croisée de mes passions pour le sport et les enjeux commerciaux.</p>
+            <p>En dehors de mon parcours académique, je suis profondément passionné par le sport, notamment par la NBA et la Formule 1, deux univers qui m'inspirent par leur intensité et leur compétitivité. Sur le plan personnel, je pratique également le basketball à un niveau élevé, ce qui m’a permis de cultiver des valeurs telles que le travail d'équipe, la rigueur et la persévérance.</p>
+            <p>Mon objectif est de combiner mes compétences académiques et ma passion sportive pour contribuer activement à l’industrie du sport, que ce soit dans la commercialisation, la gestion ou le développement de produits et services sportifs innovants.</p>
+        </div>
+        <div class="photo">
+            <img src="placeholder.jpg" alt="Photo de Melvyn">
+        </div>
+    </section>
+
+    <section id="mon-projet">
+        <div class="content">
+            <h2>Mon projet</h2>
+            <p>Depuis toujours, je rêve de devenir journaliste sportif professionnel, une ambition profondément enracinée dans ma passion pour le sport et l’écriture. Ces deux univers m’accompagnent depuis mon plus jeune âge et me poussent à vouloir faire carrière dans ce domaine. Mon objectif est clair : intégrer une grande enseigne médiatique reconnue pour son expertise et son rayonnement à l’échelle internationale. Je veux m’y imposer en tant que journaliste spécialisé, capable de traiter des sujets avec précision, profondeur et originalité, en apportant un regard unique sur le monde du sport.</p>
+            <p>Mais ma vision ne s’arrête pas là. À terme, je souhaite créer ma propre émission dédiée exclusivement au sport et plus particulièrement à la NBA, une ligue qui m’inspire par son dynamisme, son storytelling et son impact culturel. Cette émission ne serait pas seulement informative, mais immersive. Mon projet inclurait des podcasts captivants pour donner la parole à des experts et à des passionnés, des vidéos riches en contenu pour plonger les spectateurs au cœur de l’action, ainsi que des articles approfondis pour explorer les histoires, les chiffres et les enjeux qui façonnent le monde du sport.</p>
+        </div>
+        <div class="photo">
+            <img src="nba-placeholder.jpg" alt="Illustration NBA">
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content">
+            <h2>Contactez-moi</h2>
+            <p>Email : melvyn.duarte.silva@example.com</p>
+            <p>Téléphone : +33 6 12 34 56 78</p>
+            <p>Portfolio : <a href="https://melvyn4.github.io/Melvyn-" target="_blank">melvyn4.github.io/Melvyn-</a></p>
+        </div>
+        <div class="photo">
+            <img src="contact-placeholder.jpg" alt="Image Contact">
+        </div>
+    </section>
 </body>
 </html>
