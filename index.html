@@ -81,3 +81,22 @@ Mais ma vision ne s’arrête pas là. À terme, je souhaite créer ma propre é
     </section>
   </main>
   
+<script>
+  document.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const href = e.target.href;
+
+      // Ajoute une classe de sortie à body
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = href; // Redirige après l'animation
+      }, 500);
+    });
+  });
+</script>
+<section id="about" class="about-section animate">
+  <h2 class="section-title">À propos de moi</h2>
+  <p>Je m'appelle Melvyn Duarte Silva, j'ai 22 ans...</p>
+  <img src="IMG_0624.jpg" alt="Photo de Melvyn">
+</section>
