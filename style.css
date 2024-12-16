@@ -427,3 +427,79 @@ header h1 img {
   border-radius: 50%; /* Rend l'image ronde */
   margin-left: 10px; /* Espace entre le titre et l'image */
 }
+body {
+  background: linear-gradient(to bottom right, rgba(0, 123, 255, 0.7), rgba(255, 0, 123, 0.7)), 
+              url('background.jpg'); /* Remplace 'background.jpg' par une image réelle */
+  background-size: cover; /* L'image couvre tout l'écran */
+  background-attachment: fixed; /* L'arrière-plan reste fixe lors du défilement */
+  background-repeat: no-repeat;
+  color: #fff; /* Texte en blanc pour contraste */
+  font-family: Arial, sans-serif;
+}
+/* Animations pour le texte */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Classe pour animer les titres */
+h1, h2, p {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Ajoute une animation de zoom à certaines sections */
+.section-title {
+  animation: zoomIn 1.5s ease-in-out;
+}
+/* Effets par défaut pour les animations */
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Effets déclenchés par l'IntersectionObserver */
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+body.fade-out {
+  animation: fadeOut 0.5s ease-in-out;
+}
