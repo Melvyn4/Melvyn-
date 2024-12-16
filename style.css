@@ -524,7 +524,7 @@ section {
   background: rgba(255, 255, 255, 0.05); /* Légère transparence */
 }
 body {
-  background-image: url('background.jpg'); /* Remplace 'background.jpg' par le chemin de ton image */
+  background-image: url('basketball-background-7020782_1280.webp'); /* Remplace 'background.jpg' par le chemin de ton image */
   background-size: cover; /* L'image couvre tout l'écran */
   background-attachment: fixed; /* Fixe l'image de fond */
   background-position: center; /* Centrage de l'image */
