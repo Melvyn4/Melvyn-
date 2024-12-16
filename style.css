@@ -533,3 +533,9 @@ body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
 }
+section {
+  background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent noir */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
