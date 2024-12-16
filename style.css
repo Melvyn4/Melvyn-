@@ -381,3 +381,29 @@ header nav ul li a:hover {
 .animated-text h2, .animated-text p {
   animation-delay: 0.3s; /* Décalage d'animation de 0.3 secondes pour l'h2 et le p */
 }
+/* Style pour l'image ronde à côté du titre */
+header h1 {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+}
+
+header h1 img {
+  width: 50px; /* Taille de l'image ronde */
+  height: 50px;
+  border-radius: 50%; /* Rend l'image ronde */
+  margin-left: 10px; /* Espace entre le titre et l'image */
+}
+
+/* Image alignée à droite dans la section "À propos de moi" */
+.about-section {
+  display: flex;
+  align-items: center;
+}
+
+.about-section img {
+  max-width: 200px; /* Taille maximale de l'image */
+  height: auto;
+  margin-left: 20px; /* Espace entre le texte et l'image */
+  border-radius: 10px; /* Coins légèrement arrondis (optionnel) */
+}
