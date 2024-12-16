@@ -6,6 +6,31 @@
   <title>Melvyn Duarte Silva</title>
   <link rel="stylesheet" href="style.css">
 </head>
+  <script>
+  // Fonction pour détecter le mouvement au scroll
+  const sections = document.querySelectorAll('.section');
+
+  const handleScroll = () => {
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      // Vérifie si la section est visible à l'écran
+      if (rect.top < windowHeight && rect.bottom > 0) {
+        section.classList.add('visible'); // Ajoute la classe visible
+      } else {
+        section.classList.remove('visible'); // Retire la classe quand elle sort de l'écran
+      }
+    });
+  };
+
+  // Ajout de l'écouteur de défilement
+  window.addEventListener('scroll', handleScroll);
+  
+  // Appel initial pour vérifier la position des sections au chargement
+  handleScroll();
+</script>
+
 <body>
   <script>
   const observer = new IntersectionObserver((entries) => {
