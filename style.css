@@ -359,3 +359,25 @@ header nav ul li a:hover {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
   text-align: center; /* Centre le texte pour l'intro */
 }
+/* Animation fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Le texte commence en bas */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Le texte se déplace vers sa position finale */
+  }
+}
+
+/* Appliquer l'animation à l'élément */
+.animated-text {
+  opacity: 0; /* Commence invisible */
+  animation: fadeIn 1s ease-out forwards; /* Animation avec une durée de 1 seconde */
+}
+
+/* Optionnel : Ajouter un délai pour un effet plus progressif sur plusieurs éléments */
+.animated-text h2, .animated-text p {
+  animation-delay: 0.3s; /* Décalage d'animation de 0.3 secondes pour l'h2 et le p */
+}
