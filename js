@@ -12,7 +12,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
   hiddenElements.forEach(el => observer.observe(el));
 });
-function navigateTo(sectionId) {
-  document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
-  document.getElementById('entry-screen').style.display = 'none'; // Masque l'entrée après navigation
-}
