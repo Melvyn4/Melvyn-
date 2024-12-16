@@ -319,3 +319,43 @@ header nav ul li a:hover {
 }
 
 /* Autres styles existants */
+/* Justification et alignement du texte */
+.about-section, .project-section, .contact-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff; /* Fond blanc */
+  color: #000; /* Texte noir */
+  border: 2px solid #FFD700; /* Bordure dorée */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(255, 215, 0, 0.5); /* Ombre dorée */
+  text-align: justify; /* Justifie le texte */
+  line-height: 1.6; /* Augmente l'espacement des lignes pour faciliter la lecture */
+}
+
+.about-section p, .project-section p, .contact-section p {
+  text-align: justify; /* Justifie le texte dans les paragraphes */
+  margin-bottom: 20px;
+}
+
+.about-section h2, .project-section h2, .contact-section h2 {
+  text-align: left; /* Aligne les titres à gauche */
+  margin-bottom: 20px;
+}
+
+.entry-content h1 {
+  text-align: center; /* Aligne le nom au centre */
+  font-size: 4rem;
+  font-weight: bold;
+  color: #FFD700; /* Doré */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.entry-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  text-align: center; /* Centre le texte pour l'intro */
+}
