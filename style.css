@@ -523,3 +523,13 @@ section {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.05); /* Légère transparence */
 }
+body {
+  background-image: url('background.jpg'); /* Remplace 'background.jpg' par le chemin de ton image */
+  background-size: cover; /* L'image couvre tout l'écran */
+  background-attachment: fixed; /* Fixe l'image de fond */
+  background-position: center; /* Centrage de l'image */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  color: #f5f5f5; /* Blanc cassé pour le texte, adapté à un fond sombre */
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
